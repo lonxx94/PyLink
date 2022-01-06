@@ -51,7 +51,7 @@ class InfluxDB:
 class Client:
     async def websocket(self):
         global dic
-        async with websockets.connect("ws://89.158.100.193//ws/") as websocket:
+        async with websockets.connect("ws://XXX.XXX.XXX.XXX//ws/") as websocket:
             while True:
                 json_ok = await websocket.recv()
                 await asyncio.sleep(2)
